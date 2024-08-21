@@ -51,9 +51,10 @@ const Loading = () => {
                   <p className="artist-name">Artist: {item.artistName}</p>
                   <p className="release-date">Release Date: {item.releaseDate}</p>
                   <audio id={`audio-${index}`} controls className="audio-player" onPlay={() => handlePlay(index)}>
-                    <source src={item.songUrl} type="audio/ogg" />
-                    Your browser does not support the audio element.
-                  </audio>
+    <source src={item.songUrl} type="audio/ogg" />
+    <source src={item.songUrl.replace('.ogg', '.mp3')} type="audio/mpeg" />
+    Your browser does not support the audio element.
+</audio>
                 </li>
               ))}
             </ul>
