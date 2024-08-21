@@ -5,6 +5,17 @@
   
 }
 
+.now-playing {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0e1ff; /* Light purple background */
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  color: #6a0dad; /* Dark purple text */
+}
+
+
 /* From Uiverse.io by SchawnnahJ */ 
 .loader {
   position: relative;
@@ -153,81 +164,3 @@ ul {
 
 
 
-/* Navbar Styles */
-.navbar {
-  background-color: #333;
-  color: white;
-  padding: 1rem 0;
-}
-
-.cont {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s;
-}
-
-.nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-}
-
-/* Mobile Menu */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.bar {
-  height: 3px;
-  width: 25px;
-  background-color: white;
-  margin: 3px 0;
-}
-
-/* Media Query for Small Screens */
-@media (max-width: 768px) {
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #333;
-      padding: 1rem 0;
-  }
-
-  .nav-links.active {
-      display: flex;
-  }
-
-  .menu-toggle {
-      display: flex;
-  }
-}
